@@ -1,0 +1,30 @@
+# ==============================================================================
+# InfraPulse-Core Security & Compliance GitIgnore Barrier
+# ==============================================================================
+
+# Core Report Output Artifacts (Never commit live engagement data)
+Internal_VAPT_Report_*.csv
+Internal_VAPT_Compliance_Report.csv
+Internal_VAPT_Test_Registry_*.csv
+Internal_VAPT_Test_Registry.csv
+
+# Markdown Playbook Handoff Files
+Internal_VAPT_Handoff_*.md
+
+# Extraction & In-Process Staging Leftovers
+EIA_Engine.ps1
+.eia_write_test.*
+EIA-writetest-*.tmp
+eia-secpol-*.inf
+eia-privrights-*.inf
+EIA_STOP
+
+# PowerShell and Shell Logging Data
+*.log
+*.xml
+*.bak
+
+# OS-Specific Dynamic Directory Garbage
+.DS_Store
+Thumbs.db
+[Dd]ownloads/
